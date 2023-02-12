@@ -1,6 +1,9 @@
 package D_static_code;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Random;
 
 /**
  * @program: javasepromax
@@ -42,7 +45,9 @@ public class StaticTestPoker {
         cards.add("★_");
     }
     public static void main(String[] args) {
+        Collections.shuffle(cards); //Collections在java中的集合进行洗牌
         //模拟游戏启动前,初始化54张牌数据
         System.out.println("新牌"+cards);
+
     }
 }

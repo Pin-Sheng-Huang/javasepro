@@ -1,6 +1,6 @@
 
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @program: javasepromax
@@ -11,13 +11,12 @@ import java.util.Scanner;
  */
 
 public class Test {
-    class Test1{
 
-    }
 
 
 
     public static void main(String[] args) throws Exception {
+
         int flag = 1;
         int x;
         Scanner sc = new Scanner(System.in);
@@ -37,11 +36,65 @@ public class Test {
 
 
         }
-
-
     }
     public void run(){
         System.out.println("X");
     }
+
+}
+
+class Test1{
+    public static void main(String[] args) {
+        Set<String> x = new HashSet<>();
+        x.add("apple");
+        x.add("banana");
+        boolean containsApple = x.contains("apple");
+        System.out.println(containsApple);
+        int c = 0;
+        int d = x.size();
+        for(String e : x){
+
+            if(x.size() > c) {
+                System.out.print(e + ",");
+            }else if(x.size() < c){
+                System.out.print(e);
+            }
+            d--;
+            c++;
+        }
+    }
+
+}
+
+class Test2{
+    public static void main(String[] args) {
+        Set<String> set = new HashSet<>();
+        set.add("apple");
+        set.add("banana");
+
+        // 判断元素是否存在
+        boolean containsApple = set.contains("apple");
+        System.out.println(containsApple);
+
+        // 获取 Set 的大小
+        int size = set.size();
+        System.out.println(size);
+
+        // 输出 Set 中所有元素
+        StringBuilder sb = new StringBuilder();
+        for (String element : set) {
+            sb.append(element).append(",");
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        System.out.println(sb.toString());
+
+        // 删除元素
+        set.remove("banana");
+        System.out.println(set);
+        // 清空 Set
+        set.clear();
+        System.out.println(set);
+    }
+
 
 }

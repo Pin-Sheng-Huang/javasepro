@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring_mybatis.dao.UserMapper">
+    <!--查询全部 ,resultType封装返回类型-->
+    <select id="findAll" resultType="User">
+        SELECT * FROM user
+    </select>
+    <select id="findById" resultType="spring_mybatis.domain.User">
+        SELECT * FROM user
+        WHERE 1=1
+              <if test="id != null or id != ''">
+              and id = #{id}
+              </if>
+    </select>
+    <select id="findByIds" parameterType="list" resultType="spring_mybatis.domain.User">
+        SELECT * FROM user
+        <where> <!--collection看传进来封装后是啥类型的,item接收集合中的每个值-->
+            id in
+            <foreach collection="list" item="id" open="(" separator="," close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+    <!--用Name查询 ,resultType封装返回类型-->
+    <select id="findByName" resultType="spring_mybatis.domain.User">
+        SELECT * FROM user WHERE userName = #{userName}
+    </select>
+    <!--新增-->
+    <update id="update" parameterType="spring_mybatis.domain.User">
+        UPDATE user SET realName = #{realName},passWord = #{password} WHERE userName = #{userName}
+    </update>
+
+    <!--插入-->
+    <insert id="save" parameterType="spring_mybatis.domain.User">
+        INSERT INTO user(userName,passWord,realName) values(#{userName},#{password},#{realName})
+    </insert>
+    <!--删除-->
+    <delete id="delete" parameterType="java.lang.String">
+        DELETE FROM user WHERE userName = #{userName}
+    </delete>
+</mapper>

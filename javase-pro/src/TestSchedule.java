@@ -1,0 +1,24 @@
+import org.apache.logging.log4j.core.config.Scheduled;
+
+import java.util.Base64;
+import java.util.Date;
+
+/**
+ * @program: javasepromax
+ * @description:
+ * @Creator: 阿昇
+ * @CreateTime: 2023-07-19 20:20
+ * @LastEditTime: 2023-07-19 20:20
+ */
+
+public class TestSchedule {
+
+    public static void main(String[] args) {
+        String base64String = "UEsDBAoAAAAAAIdO4kAAAAAAAAAAAAAAAAAJAAAAZG9jUHJvcHMvUEsDBBQAAAAIAIdO4kDOQlwBMQEAADkCAAAQAAAAZG9jUHJvcHMvYXBwLnhtbJ2RwUoDMRCG74LvEHKvaYuIlGyKoOJFLFi9x+xsG9hNQmZcWp/FiwfBN/Dk2yj4GGY3oFvx5G0m/88/30/kfNPUrIWI1ruCTw7GnIEzvrRuVfCb5fnomDMk7UpdewcF3wLyudrfk4voA0SygCxFOCz4mijMhECzhkbjQZJdUiofG01pjSvhq8oaOPXmvgFHYjoeHwnYELgSylH4DuQ5cdbSf0NLbzo+vF1uQwJW8iSE2hpNqaW6tCZ69BWxs42BWoqhKC9Ad+UX2kZUsqVZC4Z8ZGgfUv0pZ3caoYsteKuj1Y5SfGfLSz/XASmqj9fn97fHz6cXKZKe3/pxaB3O9lBNekMado1dQOZIwi7h0lINeFUtdKQ/gCdD4J4h42ac6zUA5ZtDvr5xuvQrW/z8ufoCUEsDBBQAAAAIAIdO4kBy4DDkRAEAAD4CAAARAAAAZG9jUHJvcHMvY29yZS54bWx9kU1OwzAQhfdI3CHyPrGdqD9YSSoB6opKSASB2Fn2tI2Incg2pD0FYsdtOA0LboGbpqEIxNJ6b75585zONqoKnsHYstYZohFBAWhRy1KvMnRbzMMpCqzjWvKq1pChLVg0y09PUtEwURu4NnUDxpVgA0/SlokmQ2vnGoaxFWtQ3Ebeob24rI3izj/NCjdcPPIV4JiQMVbguOSO4x0wbAYi6pFSDMjmyVQdQAoMFSjQzmIaUfztdWCU/XOgU46cqnTbxt/Uxz1mS7EXB/fGloOxbduoTboYPj/F94urm+7UsNS7rgSgfNdPxa1b+CqXJcjzbf759v7x8pri30oqRZeNCQPcgQz8NrbPdlDukovLYo7ymNCzkExDOinImI3GjJCHFB9c/Xw+AFW//l9inIRkEsajglJGCUvoEfEAyLvcP388/wJQSwMEFAAAAAgAh07iQIDmW60nAQAADgIAABMAAABkb2NQcm9wcy9jdXN0b20ueG1spZHLTsMwEEX3SPxD5L3jR+q2qZJUzUtCLECidB85ThsptiPbKVSIf8dVKYgFG1iO7ujMmZlk/SqH4CiM7bVKAQkxCITiuu3VPgXP2xouQWBdo9pm0Eqk4CQsWGe3N8mj0aMwrhc28AhlU3BwblwhZPlByMaGPlY+6bSRjfOl2SPddT0XpeaTFMohivEc8ck6LeH4hQMX3uro/opsNT/b2d32NHrdLPmEn4JOur5NwVvJirJkmEFaxQUkmOQwjuIFxEuMaU6LOt5U7yAYz80UBKqRfvX7pwePbSfu8qkf2p0wHn10q2F8sc5kFDMKCQ39DUPCCMUJ+g4TdHX4p010tbkrdj/GEzanOcOzsqjiWVTjfFlFNMbzaFPnM1wsfrNB51NdHpl9AFBLAwQKAAAAAACHTuRAAAAAAAAAAAAAAAAACQAAAAZG9jUHJvcHMvUEsDBBQAAAAIAIdO5WQAAAAAAAAAAAAAAAAdAAAAdGVtcGxhdGUucmVhZHByb3BlcnR5CgAgAAAAAAABAAEASwAAAFBLAwQKAAAAAACHTuRAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAIZG9jUHJvcHMvY29yZS54bWwgogQCaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL2RvY3MvMjAwOS9kb2NQcm9wcy9jcmVhdGUtdG8tc3VibWlzc2lvbnMuaHRtbKSRBQSwcI8wvz4sxAQAAsgEAABMAAABkb2NQcm9wcy9hcHAueG1sUEsFBgAAAAACAAiahQAAAAA=";
+        String x = "UEsDBAoAAAAAAIdO4kAAAAAAAAAAAAAAAAAJAAAA";
+        byte[] decodedBytes = Base64.getDecoder().decode(x);
+        String decodedString = new String(decodedBytes);
+
+        System.out.println(decodedString);
+    }
+}

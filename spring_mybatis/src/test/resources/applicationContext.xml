@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--AOP配置文件comaop-->
+    <bean id="aop" class="comaop.aop"></bean>
+    <!--切面对象-->
+    <bean id="myAspect" class="comaop.MyAspect"></bean>
+    <!--配置织入,告诉spring框架,哪些方法需要进行哪些增强(前置,后置)-->
+    <aop:config><!--AOP配置的起始标签，用于声明AOP相关的配置。-->
+        <!--声明切面,ref引用-->
+        <aop:aspect ref="myAspect">
+            <!--切面,切点,通知-->
+            <aop:before method="before" pointcut="execution(public void comaop.aop.save())"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

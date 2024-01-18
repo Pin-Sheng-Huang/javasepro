@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="javasepromax">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/ES-demo/es-test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/aop/src/main/java" />
+      <root url="file://$PROJECT_DIR$/aop/src/test/java" />
+      <root url="file://$PROJECT_DIR$/collection-map-demo/src" />
+      <root url="file://$PROJECT_DIR$/day01-oop-demo/src/main/java" />
+      <root url="file://$PROJECT_DIR$/file-io-app/moviedemo/src/main/java" />
+      <root url="file://$PROJECT_DIR$/file-io-app/moviedemo/src/test/java" />
+      <root url="file://$PROJECT_DIR$/file-io-app/src" />
+      <root url="file://$PROJECT_DIR$/javase-pro/src" />
+      <root url="file://$PROJECT_DIR$/movieDemo/src/main/java" />
+      <root url="file://$PROJECT_DIR$/movieDemo/src/test/java" />
+      <root url="file://$PROJECT_DIR$/spring_demo/src/main/java" />
+      <root url="file://$PROJECT_DIR$/spring_demo/src/test/java" />
+      <root url="file://$PROJECT_DIR$/thread/src" />
+    </SOURCES>
+  </library>
+</component>

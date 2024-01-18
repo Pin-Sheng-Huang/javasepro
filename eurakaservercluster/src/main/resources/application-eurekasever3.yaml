@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-cluster
+
+eureka:
+  instance:
+    hostname: eurekaserver3
+  client:
+    service-url:
+      defaultZone: http://eurekaserver1:8761/eureka/,http://eurekaserver2:8761/eureka/
+
+server:
+  port: 8761

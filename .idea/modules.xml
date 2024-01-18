@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/javase-pro/TEST.iml" filepath="$PROJECT_DIR$/javase-pro/TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestProjectWork/TestProjectWork.iml" filepath="$PROJECT_DIR$/TestProjectWork/TestProjectWork.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection-map-demo/collection-map-demo.iml" filepath="$PROJECT_DIR$/collection-map-demo/collection-map-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day01-oop-demo/day01-oop-demo.iml" filepath="$PROJECT_DIR$/day01-oop-demo/day01-oop-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ES-demo/es-test/es-test.iml" filepath="$PROJECT_DIR$/ES-demo/es-test/es-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/file-io-app/file-io-app.iml" filepath="$PROJECT_DIR$/file-io-app/file-io-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/file-io-app/moviedemo/moviedemo.iml" filepath="$PROJECT_DIR$/file-io-app/moviedemo/moviedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-io-app/moviedemo/eureka_Server.iml" filepath="$PROJECT_DIR$/file-io-app/moviedemo/eureka_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase-pro/javase-pro.iml" filepath="$PROJECT_DIR$/javase-pro/javase-pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_demo/spring_demo.iml" filepath="$PROJECT_DIR$/spring_demo/spring_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
     </modules>
   </component>

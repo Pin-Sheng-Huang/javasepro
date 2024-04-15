@@ -16,5 +16,17 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.10" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.75" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.1.10" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.4.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:5.0.0" level="project" />
   </component>
 </module>
